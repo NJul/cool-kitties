@@ -1,0 +1,93 @@
+/* reset styles */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+ul[class],
+ol[class] {
+  list-style: none;
+}
+
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+img,
+video {
+  max-width: 100%;
+  height: auto;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* /reset styles */
+
+.container {
+  margin: 0 auto;
+  width: 80%;
+}
+
+.title h1 {
+  padding: 20px;
+  text-align: center;
+  color: #c6ae99;
+  text-shadow: #f1dec0 3px 1px 5px;
+}
+
+/* img */
+.max-height {
+  text-align: center;
+}
+
+.max-height img {
+  width: auto;
+  max-height: 400px;
+}
+/* /img */
+
+@media only screen and (max-width: 600px) {
+  body {
+    min-width: 120px;
+  }
+
+  .container {
+    width: 100%;
+  }
+}

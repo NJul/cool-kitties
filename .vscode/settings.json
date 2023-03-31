@@ -1,3 +1,4 @@
 {
-    "print.colourScheme": "nnfx"
+  "print.colourScheme": "nnfx",
+  "liveServer.settings.port": 5501
 }
