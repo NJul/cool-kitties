@@ -1,5 +1,9 @@
-/* reset styles */
+:root {
+  --primary-color: #c6ae99;
+  --secondary-color: #f1dec0;
+}
 
+/* reset styles */
 *,
 *::before,
 *::after {
@@ -56,7 +60,6 @@ textarea,
 select {
   font: inherit;
 }
-
 /* /reset styles */
 
 .container {
@@ -67,8 +70,8 @@ select {
 .title h1 {
   padding: 20px;
   text-align: center;
-  color: #c6ae99;
-  text-shadow: #f1dec0 3px 1px 5px;
+  color: var(--primary-color);
+  text-shadow: var(--secondary-color) 3px 1px 5px;
 }
 
 /* img */
@@ -81,6 +84,30 @@ select {
   max-height: 400px;
 }
 /* /img */
+
+/* Random Kitten styles */
+.kitten-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.kitten-image {
+  width: 400px;
+  height: 400px;
+  margin-bottom: 20px;
+  object-fit: cover;
+}
+
+.kitten-btn-random {
+  margin-bottom: 50px;
+  background-color: var(--secondary-color);
+  border-color: var(--primary-color);
+  border-radius: 5px;
+  cursor: pointer;
+}
+/* /Random Kitten styles */
 
 @media only screen and (max-width: 600px) {
   body {
